@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+
+    <!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>W</span>anderlust</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#trips">Trips</a>
+        <a href="#services">services</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user"Login id="login-btn"></i>
+        
+    </div>
+
+    <form action="" class="search-bar-container">
+       <input type="text" id="search-bar" v-model="search" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+  
+ 
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+    </form>
+
+</div>
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Welcome to our Website</h3>
+        <p>Dicover new places with us, adventure is waiting</p>
+    </div>
+
+     <div class="video-container">
+        <video src="vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+
+<!-- home section ends -->
+
+<!-- Trips section starts  -->
+
+<section class="trips" id="trips">
+
+    <h1 class="heading">
+        Trips
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="p-1.jpg" alt="">
+            <div class="content">
+                <h3>  Goa </h3>
+              
+               <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> Starting From Rs.15000 </div>
+                <a href="#" class="btn">Explore More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p-2.jpg" alt="">
+            <div class="content">
+               <h3>  Leh Ladakh </h3>
+               <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+               
+                <div class="price"> Starting From Rs.25000 </div>
+                <a href="#" class="btn">Explore More</a>
+            
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p-3.jpg" alt="">
+            <div class="content">
+              <h3>  Shimla</h3>
+              <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> Starting From Rs.85000 </div>
+                <a href="#" class="btn">Explore More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p-4.jpg" alt="">
+            <div class="content">
+<h3>  Dharamshala </h3>
+<div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> Starting From Rs.45000 </div>
+                <a href="#" class="btn">Explore More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p-5.jpg" alt="">
+            <div class="content">
+            <h3>  Manali</h3>
+               <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> Starting From Rs.55000 </div>
+                <a href="#" class="btn">Explore More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p-6.jpg" alt="">
+            <div class="content">
+                <h3>  Bir Billing </h3>
+<div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> Starting From Rs.55000 </div>
+                <a href="#" class="btn">Explore More</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- Trips section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+     <h1 class="heading">
+        Services
+    </h1>
+
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+           
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+           
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safty guide</h3>
+          
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+          
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+          
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+          
+        </div>
+
+    </div>
+
+</section>
+<!-- services section ends -->
+
+
+<h1 class="heading">
+        Review Us
+    </h1>
+<section class="contact" id="contact">
+        <div class="max-width">
+        
+            
+                <div class="column right">
+                 
+    <form class="contact-form" action="#" method="POST">
+                        <div class="fields">
+                            <div class="field name">
+                               <input type="text" class="email-input" name="Name" placeholder="First Name">
+                            </div>
+                            <div class="field email">
+                                <input type="text" class="email-input" name="Email" placeholder="Last Name">
+                            </div>
+                        </div>
+                       
+                        <div class="field textarea">
+                            <textarea class="message" name="Message" cols="30" rows="10" placeholder="Write Feedback"></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button class="send-msg" type="submit" name="send">Sumit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        Reviews
+    </h1>
+                <div class="box">
+                   
+                    <h3>Bhavya</h3>
+                    <p>Afordable and good packages</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+           
+                <div class="box">
+                    
+                    <h3>Keshqv Gupta</h3>
+                    <p>Great travel destinations with clear details of the trip.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+           
+                <div class="box">
+                    
+                    <h3>Yash Kaushik</h3>
+                    <p>Easy pay in options.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+          
+
+</section>
+
+<!-- review section ends -->
+<!-- Contact section start -->
+
+     <h1 class="heading">
+        Contact Us (24*7)
+    </h1>
+<section class="contact" id="contact">
+        <div class="max-width">
+        
+            
+                <div class="column right">
+                 
+    <form class="contact-form" action="#" method="POST">
+                        <div class="fields">
+                            <div class="field name">
+                               <input type="text" class="email-input" name="Name" placeholder="Name">
+                            </div>
+                            <div class="field email">
+                                <input type="text" class="email-input" name="Email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" class="subject" name="Subject"placeholder="Subject">
+                        </div>
+                        <div class="field textarea">
+                            <textarea class="message" name="Message" cols="30" rows="10" placeholder="Message.."></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button class="send-msg" type="submit" name="send">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- contact section ends -->
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>The main thing you buy to make yourself more lavish is travel.” We, at ‘Wanderlust,' swear by it and put our faith in fulfilling travel fantasies that make you forever wealthy. We inspire our clients to live a full life full with great travel experiences.
+We are dedicated to offering a professional service to our clients, ensuring that they benefit from our knowledge, style, and enthusiasm. We want to make a difference in everything we do as a highly visible, independent, and progressive travel business.</p>
+        </div>
+        
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">packages</a>
+            <a href="#">services</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit">All rights reserved! </h1>
+
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="main.js"></script>
+
+</body>
+</html>
